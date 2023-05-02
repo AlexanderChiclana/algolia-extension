@@ -81,6 +81,7 @@ const syncIndex = index => async (dispatch, getState) => {
 };
 
 const addCosmicObjectsToAlgolia = async (applicationId, adminApiKey, index) => {
+  console.log('addCosmicObjectsToAlgolia')
   const client = algoliasearch(applicationId, adminApiKey);
   const algoliaIndex = client.initIndex(index);
   const bucket = getBucket();

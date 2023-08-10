@@ -90,6 +90,10 @@ const addCosmicObjectsToAlgolia = async (applicationId, adminApiKey, index) => {
     limit = 30;
     depth = 1;
   }
+  if (index === 'career-pathways') {
+    limit = 30;
+    depth = 1;
+  }
   if (index === 'stories') {
     limit = 50;
     depth = 1;
